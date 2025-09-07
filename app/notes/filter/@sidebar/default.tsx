@@ -1,5 +1,5 @@
 import Link from "next/link";
-import css from "@/app/notes/@sidebar/default.module.css"
+import css from "@/app/notes/filter/@sidebar/default.module.css"
 export default function SidebarNotest() {
 
     const tags = ["All", "Work", "Personal", "Meeting", "Shopping", "Todo"];

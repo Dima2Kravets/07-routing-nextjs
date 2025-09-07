@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import css from "@/app/notes/LayoutNotes.module.css";
+import css from "@/app/notes/filter/LayoutNotes.module.css";
 export default function LayoutNotes({
   children,
   sidebar,
