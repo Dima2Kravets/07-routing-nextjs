@@ -11,7 +11,8 @@ export const fetchNotes = async (
   page: number,
   searchTerm: string,
   perPage: number = 12,
-  sortBy: "created" | "updated" | "title" = "created"
+  sortBy: "created" | "updated" | "title" = "created",
+  tag?:string
 ): Promise<FetchNotesResponse> => {
   const response = await axios.get<FetchNotesResponse>(
     `/notes`, {
@@ -23,6 +24,7 @@ export const fetchNotes = async (
       perPage,
       sortBy,
       search: searchTerm,
+      tag
       },
   }
   );
@@ -56,3 +58,4 @@ export const fetchNoteById = async (id: string) => {
   });
   return respons.data;
 };
+
